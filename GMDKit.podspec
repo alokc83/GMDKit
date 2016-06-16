@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-GMDKit is Google's Material design implementation for iOS Controls.
+GMDKit is collections of iOS Controls which are implementation of Google's Material Design
                    DESC
 
   s.homepage     = "https://github.com/alokc83/GMDKit"
@@ -39,8 +39,8 @@ GMDKit is Google's Material design implementation for iOS Controls.
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+#s.license      = "MIT"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -56,9 +56,7 @@ GMDKit is Google's Material design implementation for iOS Controls.
 #s.author             = { "Alok Choudhary" => "alok.ch83@gmail.com" }
   # Or just:
     s.author    = "Alok Choudhary"
-  # s.authors            = { "Alok Choudhary" => "alok.ch83@gmail.com",
-"Lokesh Purohit" => "lokeshpurohit@gmail.com"
-}
+  # s.authors            = { "Alok Choudhary" => "alok.ch83@gmail.com", "Lokesh Purohit" => "lokeshpurohit@gmail.com"}
     s.social_media_url   = "http://alokchoudhary.com"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -95,7 +93,7 @@ s.source       = { :git => "https://github.com/alokc83/GMDKit.git", :tag => "#{s
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "GMDKit/**/*.{swift}"
+  s.source_files  = "GMDKit/*.{swift,h}"
 #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -110,7 +108,7 @@ s.source       = { :git => "https://github.com/alokc83/GMDKit.git", :tag => "#{s
   #
 
   # s.resource  = "icon.png"
-  s.resources = "GMDKit/**/*.{png,jpeg,jpg,storyboard,xib}"
+#s.resources = "GMDKit/**/*.{png,jpeg,jpg,storyboard,xib}"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
